@@ -59,8 +59,3 @@ website_project/
 - Make contact form functional: add a simple backend (Node.js or serverless function) or use form services.
 - Automate deploy: create a GitHub Actions workflow to upload to EC2 or deploy to S3 + CloudFront.
 - For an app or eCommerce store, consider Dockerizing the backend and using RDS for data.
-
-If you want, I can:
-- Create a GitHub Actions file to auto-deploy.
-- Convert this into a Node.js app with a real contact API.
-- Produce a zipped package you can download.
