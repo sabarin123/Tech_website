@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Sabari Tech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Sabari Tech</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>Contact Us</h1>
+    <p>We're excited to hear about your project. Send a message and we'll respond within 1 business day.</p>
+
+    <form id="contactForm" class="contact-form" onsubmit="submitForm(event)">
+      <label>
+        Name
+        <input type="text" name="name" id="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" id="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" id="message" rows="6" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="formStatus" class="muted"></p>
+    </form>
+
+    <h2>Office</h2>
+    <p>India, Sweden<br>sabarinamasivayam13@gmail.com</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Sabari Tech</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

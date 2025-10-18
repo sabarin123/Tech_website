@@ -1,0 +1,40 @@
+/* Simple modern responsive CSS */
+:root{
+  --primary:#0b63ff;
+  --dark:#0f1724;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0; color:var(--dark); background: #f5f7fb;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1100px;margin:0 auto;padding:28px;}
+.site-header{background:linear-gradient(90deg, #ffffff, #f8fafc);box-shadow:0 2px 6px rgba(15,23,36,0.06);}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;}
+.brand{font-weight:700;color:var(--primary);text-decoration:none;font-size:20px;}
+.nav a{margin-left:16px;color:var(--dark);text-decoration:none;font-weight:600;}
+.hero{padding:60px 0;text-align:left;background:linear-gradient(180deg, #eef6ff 0%, #ffffff 100%);border-bottom:1px solid #e6eefc;}
+.hero h1{font-size:36px;margin:0 0 10px;}
+.lead{color:var(--muted);max-width:700px;}
+.cta-row{margin-top:18px;}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;background:var(--primary);color:white;text-decoration:none;font-weight:700;}
+.btn.alt{background:transparent;color:var(--primary);border:2px solid var(--primary);margin-left:10px;}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:36px;}
+.features article{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(11,99,255,0.06);}
+.about-snapshot{display:grid;grid-template-columns:1fr 320px;gap:24px;margin:48px 0;}
+.quick-contact{background:linear-gradient(180deg,#ffffff,#f6fbff);padding:18px;border-radius:10px;align-self:start;}
+.site-footer{padding:18px 0;background:#fff;border-top:1px solid #eef2ff;margin-top:40px;}
+.content h1{margin-top:6px;}
+.contact-form{max-width:640px;display:grid;gap:12px;}
+.contact-form label{display:block;font-weight:600;color:var(--muted)}
+.contact-form input, .contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefc;background:#fff}
+.muted{color:var(--muted);font-size:14px}
+@media(max-width:720px){
+  .about-snapshot{grid-template-columns:1fr;}
+  .site-header .container{flex-direction:column;gap:12px;align-items:flex-start;}
+  .nav a{margin-left:0;margin-right:12px}
+}
